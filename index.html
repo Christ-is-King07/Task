@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Preliminary Marks</h1>
+
+        <!-- Tab Creation Section -->
+        <div>
+            <input type="text" id="tabNameInput" placeholder="Enter Tab Name">
+            <button id="addTabButton">Add Tab</button>
+        </div>
+
+        <!-- Tab List -->
+        <ul id="tabs">
+            <!-- Dynamic tabs will be added here -->
+        </ul>
+
+        <!-- Table Container -->
+        <div id="tablesContainer">
+            <!-- Dynamic tables will be added here -->
+        </div>
+
+        <!-- Form for Adding Entries -->
+        <form id="dataForm" class="dataForm" data-tab="DefaultTab">
+            <input type="text" id="nameInput" placeholder="Enter Name" required>
+            <input type="text" id="infoInput" placeholder="Enter Info" required>
+            <button type="submit">Add to Table</button>
+        </form>
+    </div>
+
+    <script src="tasks.js"></script>
+</body>
+</html>
